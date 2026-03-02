@@ -18,27 +18,48 @@ This module is built for integration into the complete AI Assessment Platform.
 
 AI_ASSESSMENT_ADMIN_REPORT_MODULE/
 │
+|
+|
 ├── config/
 │ └── db.js
 │
+|
+|
+|
 ├── controllers/
 │ ├── adminAuthController.js
 │ └── adminReportController.js
 │
+|
+|
+|
 ├── middleware/
 │ └── adminMiddleware.js
 │
+|
+|
+|
+|
 ├── models/
 │ └── Candidate.js
 │
+|
+|
+|
 ├── public/
 │ ├── dashboard.html
 │ └── login.html
 │
+|
+|
+|
 ├── routes/
 │ ├── adminAuthRoutes.js
 │ └── adminReportRoutes.js
 │
+|
+|
+|
 ├── seed.js
 ├── server.js
 ├── package.json
