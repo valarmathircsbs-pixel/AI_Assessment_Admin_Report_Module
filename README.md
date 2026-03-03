@@ -14,7 +14,6 @@ Only authenticated admin users are allowed to access, manage, and download repor
 
 This module is built for integration into the complete AI Assessment Platform.
 
-## 🏗 Project Structure
 
 ## 🏗 Project Structure
 
