@@ -1,24 +1,38 @@
-# 🔐 Admin Report Generation System
+# 🔐 Admin Report Generation Integration Module
 AI Assessment Platform – Backend Module
 
 A secure backend module that enables administrators to generate and download structured PDF reports for AI-based candidate assessments.
 
 ## 👩‍💻 Developed By
 Valarmathi R
+🎯 Role
+Backend Developer responsible for designing and implementing the Admin Report Generation & Integration Module.
 
 ## 📌 Module Overview
 
-The Admin Report Generation System is a secure backend module designed to generate downloadable assessment reports for candidates.
+The Admin Report Generation Integration Module is a secure backend service that generates downloadable PDF assessment reports for candidates.
 
 Only authenticated admin users are allowed to access, manage, and download reports.
 
 This module is built for integration into the complete AI Assessment Platform.
 
+🔗 Integration Responsibilities
 
-## 🏗 Project Structure
+This module integrates multiple assessment components into a unified admin report:
 
+📥 Fetches candidate assessment data from the database
+
+📊 Integrates evaluation scores from assessment modules
+
+🧠 Incorporates performance analytics
+
+🛡 Includes monitoring logs and risk indicators
+
+📄 Generates a consolidated admin PDF report
+
+🏗 Project Structure(Updated)
 ```
-AI_ASSESSMENT_ADMIN_REPORT_MODULE/
+AI_ASSESSMENT_BACKEND/
 │
 ├── config/
 │   └── db.js
@@ -33,18 +47,24 @@ AI_ASSESSMENT_ADMIN_REPORT_MODULE/
 ├── models/
 │   └── Candidate.js
 │
-├── public/
-│   ├── dashboard.html
-│   └── login.html
-│
 ├── routes/
 │   ├── adminAuthRoutes.js
 │   └── adminReportRoutes.js
 │
+├── utils/
+│   └── reportStructure.js
+│
+├── public/
+│   ├── dashboard.html
+│   └── login.html
+│
 ├── seed.js
 ├── server.js
 ├── package.json
-└── .gitignore
+├── package-lock.json
+├── .env
+├── .gitignore
+└── README.md
 ```
 
 ## 🚀 Technologies Used
@@ -193,6 +213,21 @@ All APIs follow REST standards and return JSON responses suitable for integratio
 5. PDF generated dynamically
 6. Secure download provided
 
+✨ Key Features
+
+Modular MVC architecture
+
+Secure admin authentication using JWT
+
+Dynamic PDF report generation
+
+Centralized candidate performance reporting
+
+RESTful API design for system integration
+
+Scalable backend structure
+   
+
 
 ## 📌 Status
 
@@ -211,9 +246,9 @@ Password: admin123
 
 ## 🏁 Conclusion
 
-This module provides a structured, secure, and scalable backend solution for generating candidate assessment reports within the AI Assessment Platform.
+This module delivers a secure and scalable backend solution for generating consolidated admin assessment reports.
 
-Designed for smooth integration with other system modules.
+It integrates candidate data, evaluation metrics, and monitoring insights into a unified reporting system, enabling efficient administrative decision-making.
 
-
+The system is production-ready and designed for seamless integration within large-scale assessment platforms.
 
